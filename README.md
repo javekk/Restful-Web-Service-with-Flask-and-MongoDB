@@ -8,15 +8,20 @@ Repo from [this article](https://www.jave-hub.com/2020/03/the-simplest-restful-a
 
 First, run the MongoDB server: 
 
-  $ docker run -d -p 27017-27019:27017-27019 --name mongodb mongo
+```bash
+$ docker run -d -p 27017-27019:27017-27019 --name mongodb mongo
+```
 
 Following, we create the image for the service using this command: 
 
-  $ docker build -t my_rest_service:latest .
+```bash
+$ docker build -t my_rest_service:latest .
+```
 
 and finally, we can run the container: 
 
-  $ docker run --name my_rest_service -d -p 5000:5000 my_rest_service:latest 
-
+```bash
+$ docker run --name my_rest_service -d -p 5000:5000 my_rest_service:latest 
+```
 
 
